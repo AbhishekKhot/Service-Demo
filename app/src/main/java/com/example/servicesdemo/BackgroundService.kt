@@ -21,7 +21,8 @@ class BackgroundService : Service() {
                     }
                 }
             }
-        )
+        ).start()
+
         return super.onStartCommand(intent, flags, startId)
     }
 
